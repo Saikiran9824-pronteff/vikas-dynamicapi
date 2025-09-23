@@ -1,0 +1,30 @@
+apis:
+  ekyc-biometric:
+    $ref: ekyc-biometric_1.0.0.yaml
+gateways:
+  - datapower-api-gateway
+info:
+  name: ekyc-product
+  title: ekyc-product
+  version: 1.0.0
+plans:
+  default-plan:
+    apis:
+      ekyc-biometric: {}
+    description: Default Plan
+    rate-limits:
+      default:
+        value: 100/1hour
+    title: Default Plan
+product: 1.0.0
+visibility:
+  subscribe:
+    enabled: true
+    orgs: []
+    tags: []
+    type: authenticated
+  view:
+    enabled: true
+    orgs: []
+    tags: []
+    type: public
