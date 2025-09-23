@@ -34,11 +34,11 @@
     <exec executable="apic" failonerror="true">
       <arg value="login"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--username"/>
-      <arg value="umesh"/>
+      <arg value="apicadm"/>
       <arg value="--password"/>
-      <arg value="!n0r1t5@C"/>
+      <arg value="admin@123"/>
       <arg value="--realm"/>
       <arg value="provider/default-idp-2"/>
     </exec>
@@ -60,9 +60,9 @@
       <arg value="draft-apis:get"/>
       <arg value="${API_NAME}:${API_VERSION}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com/"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
     <echo message="API exists? ${api.exists}"/>
   </target>
@@ -85,9 +85,9 @@
       <arg value="draft-apis:create"/>
       <arg value="${API_FILE}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
   </target>
 
@@ -97,9 +97,9 @@
       <arg value="draft-apis:update"/>
       <arg line="${API_NAME}:${API_VERSION} ${API_FILE}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
   </target>
 
@@ -120,9 +120,9 @@
       <arg value="draft-products:get"/>
       <arg value="${PRODUCT_NAME}:${API_VERSION}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
     <echo message="Product exists? ${product.exists}"/>
   </target>
@@ -145,9 +145,9 @@
       <arg value="draft-products:create"/>
       <arg value="${PRODUCT_FILE}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
   </target>
 
@@ -157,9 +157,9 @@
       <arg value="draft-products:update"/>
       <arg line="${PRODUCT_NAME}:${API_VERSION} ${PRODUCT_FILE}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
   </target>
 
@@ -180,9 +180,9 @@
       <arg value="--catalog"/>
       <arg value="${CATALOG_NAME}"/>
       <arg value="--server"/>
-      <arg value="https://small-1-mgmt-api-manager-cp4i.apps.ocp.prontefflabs.com"/>
+      <arg value="https://apim.apps.mssocp.prontefflabs.com"/>
       <arg value="--org"/>
-      <arg value="indusapi-np"/>
+      <arg value="tmd-internal-org"/>
     </exec>
     <antcall target="backup"/>
   </target>
