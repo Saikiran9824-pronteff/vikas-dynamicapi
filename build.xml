@@ -231,9 +231,9 @@
       <arg value="Backup API ${API_NAME}:${API_VERSION} and Product ${PRODUCT_NAME}:${API_VERSION} at ${BACKUP_TIMESTAMP}"/>
     </exec>
 
-    <!-- Set Git remote     <property name="GIT_REMOTE" value="https://${env.GITHUB_TOKEN}@github.com/Saikiran9824-pronteff/dynamic-apic.git"/> with token -->
+    <!-- Set Git remote     <property name="GIT_REMOTE" value="https://${env.GITHUB_TOKEN}@github.com/Saikiran9824-pronteff/vikas-dynamicapi.git"/> with token -->
 <!--  Set Git remote with token (so push works)  -->
-<property name="GIT_REMOTE" value="https://${env.GIT_TOKEN}@github.com/Saikiran9824-pronteff/dynamic-apic.git"/>
+<property name="GIT_REMOTE" value="https://${env.GIT_TOKEN}@github.com/Saikiran9824-pronteff/vikas-dynamicapi.git"/>
 <exec executable="git" failonerror="true">
   <arg value="remote"/>
   <arg value="set-url"/>
